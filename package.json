@@ -1,0 +1,22 @@
+{
+  "name": "dankbot",
+  "version": "1.0.0",
+  "description": "A dank memer calculator discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/OIRNOIR/Dankbot",
+  "author": "OIRNOIR",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OIRNOIR/Dankbot"
+  },
+  "dependencies": {
+    "discord.js": "^13.1.0"
+  },
+  "engines": {
+    "node": ">=16.6.0"
+  }
+}
