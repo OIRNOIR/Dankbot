@@ -10,7 +10,6 @@ module.exports = {
   syntax: "",
   example: "",
   guildOnly: false,
-  acceptableTypes: ["message"],
   requiredPermissions: new Discord.Permissions().add("EMBED_LINKS"),
 
   async execute(instance, obj, commandName, args) {

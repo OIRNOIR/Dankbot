@@ -11,7 +11,6 @@ module.exports = {
   syntax: " [Command]",
   example: "",
   guildOnly: false,
-  acceptableTypes: ["message"],
   requiredPermissions: new Discord.Permissions().add("EMBED_LINKS").add("READ_MESSAGE_HISTORY"),
 
   async execute(instance, obj, commandName, args) {

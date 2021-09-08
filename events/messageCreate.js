@@ -24,13 +24,12 @@ module.exports = async (instance, message) => {
     const command = instance.commands.get(commandName) || instance.commands.find(cmd => cmd.aliases.indexOf(commandName) > -1);
     if (command != undefined){
       if (command.guildOnly && message.isDM) return message.reply({content: "This command isn't available in DMs.", allowedMentions: {repliedUser: false}});
-      if (command.acceptableTypes.indexOf("message") == -1) return message.channel.send({content: "This command can't be run via message!"});
       if (message.isDM == false){
         let missingPermissions = [];
         if (!message.channel.permissionsFor(message.guild.me).has(Discord.Permissions.FLAGS.EMBED_LINKS) && command.requiredPermissions.has(Discord.Permissions.FLAGS.EMBED_LINKS)){missingPermissions.push("Embed Links");}
         if (!message.channel.permissionsFor(message.guild.me).has(Discord.Permissions.FLAGS.READ_MESSAGE_HISTORY) && command.requiredPermissions.has(Discord.Permissions.FLAGS.READ_MESSAGE_HISTORY)){missingPermissions.push("Read Message History");}
         if (missingPermissions.length > 0){
-          return await message.channel.send("I am missing these permissions: " + missingPermissions.join(', ') + ". These are required to run this command. Use `" + settings.prefix + "checkperms` to check my perms in this channel.");
+          return await message.channel.send("I am missing these permissions: " + missingPermissions.join(', ') + ". These are required to run this command. Use `" + instance.config.prefix + "checkperms` to check my perms in this channel.");
         }
       }
       await command.execute(instance, message, commandName, args);

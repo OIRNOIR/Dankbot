@@ -10,7 +10,6 @@ module.exports = {
   syntax: " <prestige> [premium]` OR `{prefix}COMMANDNAME <prestige from> <prestige to> [premium]",
   example: " 10 premium",
   guildOnly: false,
-  acceptableTypes: ["message"],
   requiredPermissions: new Discord.Permissions().add("EMBED_LINKS").add("READ_MESSAGE_HISTORY"),
 
   async execute(instance, obj, commandName, args) {

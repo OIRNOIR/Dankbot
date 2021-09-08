@@ -10,10 +10,9 @@ module.exports = {
   syntax: "",
   example: "",
   guildOnly: true,
-  acceptableTypes: ["message"],
   requiredPermissions: new Discord.Permissions(),
 
-  async execute(instance, obj, type, commandName, args) {
+  async execute(instance, obj, commandName, args) {
     const client = instance.client;
     const embedColor = instance.config.embedColor;
     try {
