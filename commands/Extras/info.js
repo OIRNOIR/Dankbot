@@ -32,10 +32,6 @@ module.exports = {
         name: "Made by",
         value: "OIRNOIR#0032",
         inline: true
-      }, {
-        name: "Packages",
-        value: "-`discord.js` version 13.1.0",
-        inline: true
       }]);
       await obj.reply({embeds: [embed], allowedMentions: {repliedUser: false}});
     } catch (error) {
