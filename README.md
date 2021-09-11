@@ -1,7 +1,7 @@
 # Dankbot
 
  Code made by OIRNOIR#0032.
- Redistribution is allowed.
+ See license in LICENSE.txt.
 
  At least nodejs v16.6 is required.
 
