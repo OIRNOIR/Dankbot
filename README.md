@@ -5,4 +5,12 @@
 
  At least nodejs v16.6 is required.
 
- I'm not making a setup guide, experienced users can figure it out.
+### Setup instructions
+
+- Download and install [Node.JS](https://nodejs.org). Make sure you have at least version 16.6.
+
+- Open the directory where you have saved this code in terminal or command prompt, and run `npm install`
+
+- Open config.js and replace "YOUR_BOT_TOKEN_GOES_HERE" with your bot token. Make sure the application has the message content intent enabled!
+
+- Use `node ./index.js` to start the bot.
