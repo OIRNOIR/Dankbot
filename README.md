@@ -3,11 +3,11 @@
  Code made by OIRNOIR#0032.
  This code is under the MIT license. See LICENSE.txt.
 
- At least nodejs v16.6 is required.
+ At least nodejs v16.9 is required.
 
 ### Setup instructions
 
-- Download and install [Node.JS](https://nodejs.org). Make sure you have at least version 16.6.
+- Download and install [Node.JS](https://nodejs.org). Make sure you have at least version 16.9.
 
 - Open the directory where you have saved this code in terminal or command prompt, and run `npm install`
 

@@ -1,6 +1,6 @@
 {
   "name": "dankbot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A dank memer calculator discord bot",
   "main": "index.js",
   "scripts": {
@@ -14,9 +14,9 @@
     "url": "https://github.com/OIRNOIR/Dankbot"
   },
   "dependencies": {
-    "discord.js": "^13.1.0"
+    "discord.js": "^13.6.0"
   },
   "engines": {
-    "node": ">=16.6.0"
+    "node": ">=16.9.0"
   }
 }
